@@ -37,6 +37,10 @@ except socket.error:
     print "Couldn't connect to server"
     sys.exit()
 
+except socket.timeout:
+    print("timeout error ")
+
+
 t2 = datetime.now()
 
 total =  t2 - t1
